@@ -1,0 +1,8 @@
+---
+- name: Install VLC via Chocolatey
+  hosts: localhost
+  tasks:
+    - name: Install VLC using Chocolatey
+      win_chocolatey:
+        name: vlc
+        state: latest
