@@ -1,6 +1,7 @@
 ---
-- name: Install VLC via Chocolatey
+- name: Install VLC via Chocolatey on localhost
   hosts: localhost
+  connection: local
   tasks:
     - name: Install VLC using Chocolatey
       win_chocolatey:
